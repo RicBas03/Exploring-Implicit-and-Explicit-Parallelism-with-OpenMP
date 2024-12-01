@@ -1,0 +1,36 @@
+#!/bin/bash
+# Job name
+#PBS -N Cjob
+# Output files
+#PBS -o ./Cjob.o
+#PBS -e ./Cjob.e
+# Queue name
+#PBS -q short_cpuQ
+# Set the maximum wall time
+#PBS -l walltime=0:10:00
+# Number of nodes, cpus, mpi processors and amount of memory
+#PBS -l select=1:ncpus=4:ompthreads=4:mem=1mb
+
+# Modules for C
+module load gcc91
+gcc() {
+    gcc-9.1.0 "$@"
+}
+gcc --version
+# Select the working directory
+cd /home/riccardo.bassan/test/homework
+
+# The code should be compiled before submitting the job
+gcc -o exeC homework1.c -fopenmp
+
+# Run code
+./exeC 16
+./exeC 32
+./exeC 64
+./exeC 128
+./exeC 256
+./exeC 512
+./exeC 1024
+./exeC 2048
+./exeC 4096
+
