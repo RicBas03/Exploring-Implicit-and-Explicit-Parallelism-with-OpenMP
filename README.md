@@ -4,7 +4,7 @@ described.
 • homework1.pbs: that runs the program for every matrix
 size.
 
-###Instructions
+### Instructions
 1) Install GCC compiler
 2) Clone the repository
 3) Compile the program with gcc −o es homework1.c −
