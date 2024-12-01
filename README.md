@@ -5,7 +5,7 @@ described.
 size.
 
 ### Instructions
-1) Install GCC compiler
+1) Install gcc 9.1.0 compiler version
 2) Clone the repository
 3) Compile the program with `gcc −o es homework1.c −
 fopenmp − O2`
