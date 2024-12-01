@@ -1,7 +1,7 @@
 ### Repository contents
-• homework1.c: code containing all the implementations
+- homework1.c: code containing all the implementations
 described.
-• homework1.pbs: that runs the program for every matrix
+- homework1.pbs: that runs the program for every matrix
 size.
 
 ### Instructions
